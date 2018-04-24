@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="94dp"
+            android:layout_height="77dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/tvPrice"
+                android:text="45646545646464645546"
+                android:textColor="#1e51fa"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="$145"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/etVName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/vahical_name"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/etVBrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/vehicle_brand"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray" />
+
+
+        <Spinner
+            android:id="@+id/spinnerColor"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginBottom="10dp"
+            android:prompt="@string/color" />
+
+
+        <Spinner
+            android:id="@+id/spinnerTiming"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:prompt="@string/color" />
+
+
+        <Spinner
+            android:id="@+id/spinnerParking"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:prompt="@string/color" />
+
+
+        <Spinner
+            android:id="@+id/spinnerPayment"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:prompt="@string/color" />
+
+        <Button
+            android:id="@+id/btnAddTicket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="@string/nav__title_add_ticket"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+</ScrollView>

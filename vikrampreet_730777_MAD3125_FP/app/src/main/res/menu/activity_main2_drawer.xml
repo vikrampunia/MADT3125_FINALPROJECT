@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/nav__title_home" />
+        <item
+            android:id="@+id/nav_add_ticket"
+            android:icon="@drawable/cinema"
+            android:title="@string/nav__title_add_ticket" />
+        <item
+            android:id="@+id/nav_loc"
+            android:icon="@drawable/ic_maps"
+            android:title="@string/nav__title_location" />
+        <item
+            android:id="@+id/nav_inst"
+            android:icon="@drawable/recycable"
+            android:title="@string/nav__title_instruction" />
+    </group>
+
+    <item android:title="@string/settings">
+        <menu>
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/phone_book"
+                android:title="@string/nav__title_contact" />
+            <item
+                android:id="@+id/nav_report"
+                android:icon="@drawable/folded_newspaper"
+                android:title="@string/nav__title_report" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="@string/nav__title_logout" />
+        </menu>
+    </item>
+
+</menu>
